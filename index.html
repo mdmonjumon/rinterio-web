@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,32 +19,100 @@
 
     <!-- daisy UI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    
+
     <!-- custom css -->
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color': '#ABEF5F',
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-color': '#ABEF5F',
 
-              },
-              fontFamily:{
-                'manrope-font': '"Manrope", "sans-serif"'
-              },
-              backgroundImage: {
-                backgroundImage: "url('./assets/bg.jpg')"
-              },
+                    },
+                    fontFamily: {
+                        'manrope-font': '"Manrope", "sans-serif"'
+                    },
+                    backgroundImage: {
+                        backgroundImage: "url('./assets/bg.jpg')"
+                    },
+                },
             },
-          },
         }
-      </script>
+    </script>
 
 
 </head>
-<body>
-   
+
+<body class="font-manrope-font">
+    <!-- header section -->
+    <header class=" bg-[#e9e9e948]">
+        <div class="max-w-7xl mx-auto">
+            <div class="navbar flex justify-between">
+                <div class="navbar-start lg:w-max space-x-2">
+                    <i
+                        class="fa-solid fa-arrow-right-long text-base p-2 h-8 w-8 bg-[#ABEF5F] rounded-full flex justify-center items-center -rotate-45"></i>
+
+                    <a class="font-extrabold text-2xl lg:text-4xl text-[#212121]">Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-extrabold text-base text-[#494949]">Home</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Services</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Portfolio</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Blogs</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:inline-flex gap-2">
+
+                    <div
+                        class="w-12 h-12 bg-[#FFFFFF] border border-[#E9E9E9]  rounded-full flex justify-center items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div
+                        class="w-12 h-12 bg-[#FFFFFF] border border-[#E9E9E9]  rounded-full flex justify-center items-center">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="py-2 px-5 bg-[#ABEF5F] rounded-full hover:bg-[#acef5fc7]"><a
+                            class="font-extrabold text-xl ">Book
+                            Consult <i
+                                class="fa-solid fa-arrow-right-long text-white p-3 bg-[#1C1C1C] rounded-full -rotate-45"></i></a>
+                    </div>
+                </div>
+                <!--  -->
+
+
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost w-12 h-12 bg-[#FFFFFF] border border-[#E9E9E9] rounded-full">
+                        <i class="fa-solid fa-bars text-2xl "></i>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content right-0 top-6 rounded-box z-[1] mt-3  p-2 shadow">
+                        <li><a class="font-extrabold text-base text-[#494949]">Home</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Services</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Portfolio</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Blogs</a></li>
+                        <li><a class="font-normal text-base text-[#737373]">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+
+                <!--  -->
+
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main section -->
+    <main></main>
+
+    <!-- footer section -->
+    <footer></footer>
+
 </body>
+
 </html>
